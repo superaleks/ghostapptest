@@ -32,4 +32,4 @@ docker run -d --name ghost \
 
 ### STEP 4 - START THE APPLICATION
 
-docker-compose up
+docker-compose up -d
