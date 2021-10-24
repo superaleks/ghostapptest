@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/GhostTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/test/scenario1/runtest.sh">
           <value>
             <set />
