@@ -1,4 +1,4 @@
-##Ghost application deployment tests
+## Ghost application deployment tests
 
 Welcome to this mini test framework! To use it, first you'll need to clone this repository to your local machine. Then please follow the rest of the steps.
 
@@ -21,9 +21,9 @@ First, I'll show you how I imagined the scenarios based on what I understood fro
 For both of the scenarios, the tests will be executed in the same way.
 I didn't change the docker-compos files. Instead, I modified the deployment step to have different environment (scenarios).
 
-###Scenarios
+### Scenarios
 
-####Scenario #1
+#### Scenario #1
 Deploy an application with the default username, password, and email. Make sure that the application loads properly and user use the email to log into the app. 
 
 * Execute the setTheStage.sh to deploy the application to your local machine.
@@ -37,7 +37,7 @@ sh cleanup.sh
 ```
 
 
-####Scenario #2
+#### Scenario #2
 Deploy an application with the ghost blog title matching the username. Then make sure that the deployment went well and the blog has changed the title.
 
 
@@ -51,6 +51,6 @@ sh runtests.sh
 sh cleanup.sh
 ```
 
-####Helm chart tests
+#### Helm chart tests
 
 TBD
