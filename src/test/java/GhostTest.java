@@ -46,8 +46,8 @@ class GhostTest {
 
     @Test
     void test() {
-        WebElement pageTitle = driver.findElement(By.xpath(PAGE_TITLE));
         driver.get(environment_url);
+        WebElement pageTitle = driver.findElement(By.xpath(PAGE_TITLE));
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOf(pageTitle));
         driver.findElement(By.xpath(PAGE_TITLE)).getText();
         assertTrue(pageTitle.isDisplayed());
