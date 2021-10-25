@@ -27,12 +27,12 @@ I didn't change the docker-compos files. Instead, I modified the deployment step
 Deploy an application with the default username, password, and email. Make sure that the application loads properly and user use the email to log into the app. 
 
 * Execute the setTheStage.sh to deploy the application to your local machine.
-* After you have the application running on your local host, execute the runtests.sh
+* After you have the application running on your local host, go back to the source folder and execute maven test
 * After you finish with one scenario, run the cleanup.sh script to kill all the docker containers, network and also remove the persisten volumes.
 
 ```
 sh setTheStage.sh
-sh runtests.sh
+mvn test
 sh cleanup.sh
 ```
 
@@ -41,13 +41,13 @@ sh cleanup.sh
 Deploy an application with the ghost blog title matching the username. Then make sure that the deployment went well and the blog has changed the title.
 
 
-* Execute the setTheStage.sh to deploy the application to your local machine.
-* After you have the application running on your local host, execute the runtests.sh
+* Execute the setTheStage.sh from Scenario 2 folder to deploy the application to your local machine.
+* After you have the application running on your local host, execute maven test
 * After you finish with one scenario, run the cleanup.sh script to kill all the docker containers, network and also remove the persisten volumes.
 
 ```
 sh setTheStage.sh
-sh runtests.sh
+sh runtest.sh
 sh cleanup.sh
 ```
 
