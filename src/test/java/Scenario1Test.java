@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class GhostTest {
+class Scenario1Test {
 
     public String environment_url = "http://localhost/";
 
