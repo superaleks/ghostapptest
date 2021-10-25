@@ -51,6 +51,9 @@ sh runtest.sh
 sh cleanup.sh
 ```
 
-#### Helm chart tests
+#### TODO
 
-TBD
+* How you would test a Helm chart
+* Use maven to run one single test, improve test execution method
+* See why the application is not behaving as I expect and the credentials are not being used anywhere
+* Add scenario2 test case as if the apoplication were working properly
