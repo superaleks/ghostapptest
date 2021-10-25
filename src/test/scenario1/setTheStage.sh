@@ -25,7 +25,6 @@ docker run -d --name ghost \
   --env GHOST_DATABASE_NAME=bitnami_ghost \
   --env GHOST_USERNAME=aleksandra \
   --env GHOST_PASSWORD=goodToBeAlive123 \
-  --env GHOST_EMAIL=aleksandra@yopmail.com \
   --network ghost-network \
   --volume ghost_data:/bitnami/ghost \
   bitnami/ghost:latest

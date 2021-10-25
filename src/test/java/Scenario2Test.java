@@ -12,14 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Scenario2Test {
 
-    public String environment_url = "http://localhost/";
 
-    public static String SUBSCRIBE_BUTTON = "//a[@class='gh-head-button']";
-    public static String PAGE_TITLE = "//h1[@class='site-title']";
 
     WebDriver driver;
 
@@ -42,10 +38,7 @@ public class Scenario2Test {
 
     @Test
     void test() {
-        driver.get(environment_url);
-        WebElement pageTitle = driver.findElement(By.xpath(PAGE_TITLE));
-        new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOf(pageTitle));
-        driver.findElement(By.xpath(PAGE_TITLE)).getText();
-        assertTrue(pageTitle.isDisplayed());
+
+
     }
 }

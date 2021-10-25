@@ -24,6 +24,7 @@ services:
       - GHOST_DATABASE_PORT_NUMBER=3306
       - GHOST_DATABASE_USER=bn_ghost
       - GHOST_DATABASE_NAME=bitnami_ghost
+      - GHOST_EMAIL=aleksandra@yopmail.com
 volumes:
   mariadb_data:
     driver: local
