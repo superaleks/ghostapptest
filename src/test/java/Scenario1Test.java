@@ -17,14 +17,12 @@ class Scenario1Test {
 
     public String BASE_URL = "http://localhost/";
     public String SIGNUP_URL = BASE_URL +"portal/signup";
-
-    public static String SIGN_IN_LINK = "//*[contains(text(),'Sign in')]";
-    public static String EMAIL_TEXT_FIELD = "//input[@id='input-email']";
-    public static String EMAIL = "aleksandra@yopmail.com";
-    public static String CONTINUE_BUTTON = "//*[contains(text(),'Continue')]";
-
-    public static String SUBSCRIBE_BUTTON = "//a[@class='gh-head-button']";
-    public static String PAGE_TITLE = "//h1[@class='site-title']";
+    public String SIGN_IN_LINK = "//*[contains(text(),'Sign in')]";
+    public String EMAIL_TEXT_FIELD = "//input[@id='input-email']";
+    public String EMAIL = "aleksandra@yopmail.com";
+    public String CONTINUE_BUTTON = "//*[contains(text(),'Continue')]";
+    public String PAGE_TITLE = "//h1[@class='site-title']";
+    public String SIGNUP_FORM_BILLING = "//form[id='signup-form-billing']";
 
     WebDriver driver;
 
@@ -55,15 +53,18 @@ class Scenario1Test {
     }
 
     @Test
-    void testIfUserCanSignIn(){
+    void testIfUserCanSignUp(){
         driver.get(SIGNUP_URL);
         WebElement signInLink = driver.findElement(By.xpath(SIGN_IN_LINK));
         WebElement emailTextField = driver.findElement(By.xpath(EMAIL_TEXT_FIELD));
         WebElement continueButton = driver.findElement(By.xpath(CONTINUE_BUTTON));
+        WebElement signUpFormBilling = driver.findElement(By.xpath(SIGNUP_FORM_BILLING));
         new WebDriverWait(driver, Duration.ofSeconds(3)).until(ExpectedConditions.visibilityOf(signInLink));
         signInLink.click();
         emailTextField.sendKeys(EMAIL);
         continueButton.click();
+        assertTrue(signUpFormBilling.isDisplayed());
+
     }
 }
 

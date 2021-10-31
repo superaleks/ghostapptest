@@ -1,6 +1,6 @@
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install my-release \
-  --set ghostBlogTitle=Aleksandra \
+  --set ghostBlogTitle=aleksandraqa \
   --set ghostUsername=aleksandra,ghostPassword=goodToBeAlive123 \
   --set ghostPath=localhost  \
   --set service.type=LoadBalancer  \
