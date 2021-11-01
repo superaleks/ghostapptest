@@ -66,8 +66,3 @@ Then, you can run the test suite Scenario1Test or Scenario2Test using the comman
 sh setTheStage.sh
 helm delete my-release
 ```
-
-#### TODO
-* Fix the wait in Scenario2
-* Try to deploy on Google cloud (waiting for Payment configuration)
-* Complete the README
