@@ -56,7 +56,7 @@ sh cleanup.sh
 
 #### Scenario 1 and 2 with Helm Chart
 
-In order to deploy the Ghost application using Helm chart, I´ve followed the documentation provided on this page [MIT](https://github.com/bitnami/charts/tree/master/bitnami/ghost).
+In order to deploy the Ghost application using Helm chart, I´ve followed the documentation provided on this page [Bitnami Ghost Helm Chart](https://github.com/bitnami/charts/tree/master/bitnami/ghost).
 I've added a helm folder under test, with two folders that follow the structure I implemented earlier. 
 In order to deploy the application with Scenario 1 or 2, you need to run the setTheStage.sh.
 The URL of the application should be localhost. (http://localhost/).
