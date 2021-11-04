@@ -44,7 +44,7 @@ Deploy an application with the ghost blog title matching the username. Then make
 
 * Execute the setTheStage.sh from Scenario 2 folder to deploy the application to your local machine.
 * After you have the application running on your local host, execute maven test
-* After you finish with one scenario, run the cleanup.sh script to kill all the docker containers, network and also remove the persisten volumes.
+* After you finish with one scenario, run the cleanup.sh script to kill all the docker containers, network and also remove the persistent volumes.
 
 ```
 cd src/test/scenario2
